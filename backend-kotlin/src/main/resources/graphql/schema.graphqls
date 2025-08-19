@@ -1,0 +1,18 @@
+# Main schema file that defines all types and Query root
+
+# Message type definition
+type Message {
+    id: ID!
+    content: String!
+    createdAt: String!
+}
+
+type Query {
+    # Message queries
+    latestMessages(limit: Int): [Message]!
+}
+
+type Mutation {
+    # Message mutations
+    createMessage: Message!
+}
