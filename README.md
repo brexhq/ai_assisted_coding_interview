@@ -162,24 +162,24 @@ For frontend:
 
 - **Example Query**:
     ```graphql
-    query {
-      latestMessages(limit: 10) {
-        id
-        content
-        createdAt
-      }
-    }
+query {
+  latestMessages(limit: 10) {
+    id
+    content
+    createdAt
+  }
+}
     ```
 
 - **Example Mutation**:
     ```graphql
-    mutation {
-      createMessage {
-        id
-        content
-        createdAt
-      }
-    }
+mutation {
+  createMessage {
+    id
+    content
+    createdAt
+  }
+}
     ```
 
 ### Running Tests
